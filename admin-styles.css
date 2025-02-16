@@ -109,3 +109,114 @@ footer {
     background-color: #282c34;
     color: white;
 }
+
+/* Threat Monitoring Section */
+.threat-log table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.threat-log th, .threat-log td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.threat-log th {
+    background-color: #f4f4f4;
+}
+
+.status-blocked {
+    color: #28a745; /* Green for blocked threats */
+}
+
+.status-pending {
+    color: #ffc107; /* Yellow for pending threats */
+}
+
+.resolve-btn, .block-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resolve-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.resolve-btn:hover {
+    background-color: #0056b3;
+}
+
+.status-resolved {
+    color: #6c757d; /* Gray for resolved threats */
+}
+
+.block-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.block-btn:hover {
+    background-color: #c82333;
+}
+
+/* Threat Monitoring Section */
+.threat-overview {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.status-secure {
+    color: #28a745; /* Green for secure status */
+    font-weight: bold;
+}
+
+.threat-count {
+    color: #007bff; /* Blue for threat count */
+    font-weight: bold;
+}
+
+.threat-log {
+    margin-top: 20px;
+}
+
+.threat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.threat-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.threat-details p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Animation for resolved threats */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.threat-item.resolved {
+    animation: fadeIn 1s ease-in-out;
+}

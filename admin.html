@@ -46,9 +46,29 @@
 
     <section id="threats" class="dashboard-section">
         <h2>Threat Monitoring</h2>
+        <div class="threat-overview">
+            <p><strong>System Status:</strong> <span class="status-secure">Secure</span></p>
+            <p><strong>Threats Blocked Today:</strong> <span class="threat-count">3</span></p>
+        </div>
         <div class="threat-log">
-            <p><strong>10:15 AM</strong> - Suspicious activity detected from IP 192.168.1.100. Blocked by firewall.</p>
-            <p><strong>09:45 AM</strong> - Phishing attempt detected. Email quarantined.</p>
+            <div class="threat-item resolved">
+                <div class="threat-icon">🛡️</div>
+                <div class="threat-details">
+                    <p><strong>10:15 AM</strong> - Suspicious activity from 192.168.1.100 blocked.</p>
+                </div>
+            </div>
+            <div class="threat-item resolved">
+                <div class="threat-icon">🛡️</div>
+                <div class="threat-details">
+                    <p><strong>09:45 AM</strong> - Phishing attempt from 192.168.1.101 blocked.</p>
+                </div>
+            </div>
+            <div class="threat-item resolved">
+                <div class="threat-icon">🛡️</div>
+                <div class="threat-details">
+                    <p><strong>09:30 AM</strong> - Malware detected and quarantined.</p>
+                </div>
+            </div>
         </div>
     </section>
 
